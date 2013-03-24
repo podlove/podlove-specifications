@@ -1,6 +1,6 @@
 Title: Podlove Alternate Feeds
 Author: Tim Pritlove
-LastEdited: 2013-03-24
+Version: 1.0
 
 # Podlove Alternate Feeds #
 
