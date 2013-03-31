@@ -57,16 +57,16 @@ The <strong>&lt;psc:chapter&gt;</strong> element defines a single chapter mark w
 
 The `<psc:chapter>` element accepts the following attributes:
 
->**start="time"**
+>**`start="time"`**
 :    Refers to a single point in time relative to the beginning of the media file. The syntax of *time* is defined below. This attribute is **mandatory**.
 
->**title="name"**
+>**`title="name"`**
 :    Defines *name* to be the title of the chapter. The title could be any length, but authors should consider the titles to be displayed on small devices with limited screen estate. Also, shorter titles are easier to grasp. This attribute is **mandatory**.
 
->**href="link"**
+>**`href="link"`**
 :    This is an additional hypertext reference as an extension of the title that refers to a resource that provides related information. This link **should** be presented to the user only in context with the chapter and it's title. This attribute is optional.
 
->**image="url"**
+>**`image="url"`**
 :    This is an URL pointing to an image to be associated with the chapter. This attribute is optional.
 
 The list of `<psc:chapter>` elements within an `<psc:chapters>` element **should** be in the order of the value of their time attribute but clients **must** be able to  resort the list based on time when presenting it to the user.
@@ -77,19 +77,19 @@ The time is expressed in Normal Play Time [^NPT] which allows for a flexible inp
 
 Here are some examples that show how the time field can be used:
 
->01:35:52
+>**`01:35:52`**
 :    1 hour 35 minutes 52 seconds
 
->7:48
+>**`7:48`**
 :   7 minutes, 48 seconds
 
->35:12.250
+>**`35:12.250`**
 :    35 minutes, 12 seconds, 250 ms
 
->05:12:03.500
+>**`05:12:03.5`**
 :    5 hours, 12 minutes, 3 seconds, 500 ms
 
->37
+>**`37`**
 :    37 seconds
 
 ## Embedding Example ##
