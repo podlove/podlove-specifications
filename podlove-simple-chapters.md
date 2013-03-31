@@ -1,8 +1,8 @@
-Title: Podlove Simple Chapters
-Author: Tim Pritlove
-Version: 1.2
-Tags: podlove, podcast, chapters, feeds, atom, rss
-Status: Current
+Title: Podlove Simple Chapters  
+Author: Tim Pritlove  
+Version: 1.2  
+Tags: podlove, podcast, chapters, feeds, atom, rss  
+Status: Current  
 
 # Podlove Simple Chapters #
 
