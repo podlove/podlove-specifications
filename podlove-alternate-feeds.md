@@ -1,6 +1,8 @@
 Title: Podlove Alternate Feeds
 Author: Tim Pritlove
 Version: 1.0
+Tags: podlove, podcasts, alternate feeds, feeds, atom, rss
+Status: Deprecated
 
 # Podlove Alternate Feeds #
 
