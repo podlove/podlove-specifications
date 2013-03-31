@@ -18,7 +18,7 @@ Using the method described below podcast clients can decide to present this info
 
 ## Setting a Title for Feeds ##
 
-Each podcast feed SHOULD include `<atom:link rel="self" ...>` element in the feeds global section to link back to its original feed. This is a common procedure. But the optional <code>title</code> attribute is usually left out. We recommend setting this title to describe the nature of the feed in the podcast feed's original language.
+Each podcast feed SHOULD include a `<atom:link rel="self" ...>` element in the feeds global section to link back to its original feed. This is a common procedure. But the optional <code>title</code> attribute is usually left out. We recommend setting this title to describe the nature of the feed in the podcast feed's original language.
 
 	<?xml version="1.0" encoding="utf-8"?>
 	<feed xmlns="http://www.w3.org/2005/Atom">
@@ -26,8 +26,10 @@ Each podcast feed SHOULD include `<atom:link rel="self" ...>` element in the f
 	    <title>My Cool Podcast</title>
 	    <link rel="self"
 	          href="http://mycoolpodcast.com/feed/mp3"
-	          type="application/atom+xml"
-	          title="MP3 audio"/>
+		      type="application/atom+xml" title="MP3 audio"/>
+	
+		...
+	
 
 By providing a title for the current feed itself, podcast clients can display this title alongside the titles of alternate feeds (see below)
 
