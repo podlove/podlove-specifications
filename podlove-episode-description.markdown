@@ -150,20 +150,20 @@ In comparison to the XML representation described above, the JSON representation
 	{
 		"title": "Podlove Podcast",
 		"subtitle": "Insights and outlooks by the Podlove project",
-		"summary": "The Podlove team updates creators and developers on the latest thinking behind the Podlove project, it's software projects and standards.\nThe podcast is delivered bi-weekly and welcomes feedback on any level. Join as we try to shape the future of podcasting for the greater good."
+		"summary": "The Podlove team updates creators and developers on the latest thinking behind the Podlove project, it's software projects and standards.\nThe podcast is delivered bi-weekly and welcomes feedback on any level. Join as we try to shape the future of podcasting for the greater good.", 
 		"homepage": "http://podlove.org/example/podcast",
-		"feeds": {
-			"feed": {
+		"feeds": [
+			{
 				"feed-title": "MP3 Audio",
-				"feed-url": "http://podlove.org/example/podlove-feed-mp3.rss"
+				"feed-url": "http://podlove.org/example/podlove-feed-mp3.rss",  
 				"enclosure-mime-type": "audio/mpeg"
 			},
-			"feed": {
+			{
 				"feed-title": "MP4 Audio",
-				"feed-url": "http://podlove.org/example/podlove-feed-m4a.rss"
+				"feed-url": "http://podlove.org/example/podlove-feed-m4a.rss", 
 				"enclosure-mime-type": "audio/mp4"
-			},
-		}
+			}
+		]
 	}
 
 		
