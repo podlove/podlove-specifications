@@ -107,7 +107,7 @@ A podcast episode is provided to the user in form of media files. These may be a
 
 	<?xml version="1.0" encoding="utf-8"?>
 	<episode xmlns="http://podlove.org/dtd/episode-description">
-		<title>Podlove Podcast</title>
+		<title>Podlove Episode</title>
 		<subtitle>
 			Insights and outlooks by the Podlove project
 		</subtitle>
@@ -148,7 +148,7 @@ The JSON representation is a general specification on how to map the above eleme
 In comparison to the XML representation described above, the JSON representation does not support namespaces and therefore it can't be mixed in easily.
 
 	{
-		"title": "Podlove Podcast",
+		"title": "Podlove Episode",
 		"subtitle": "Insights and outlooks by the Podlove project",
 		"summary": "The Podlove team updates creators and developers on the latest thinking behind the Podlove project, it's software projects and standards.\nThe podcast is delivered bi-weekly and welcomes feedback on any level. Join as we try to shape the future of podcasting for the greater good.", 
 		"homepage": "http://podlove.org/example/podcast",
@@ -167,4 +167,13 @@ In comparison to the XML representation described above, the JSON representation
 	}
 
 		
-		
+In the case of an App.net annotation, the JSON representation should be wrapped into a **value** field with a type value of **org.podlove.episode-description**.
+
+	{
+		"type": "org.podlove.episode-description",
+		"value": 
+		{
+			"title": "Podlove Episode",
+			...
+		}
+	}	
