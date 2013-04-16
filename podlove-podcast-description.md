@@ -172,5 +172,14 @@ In comparison to the XML representation described above, the JSON representation
 		
 	}
 
-		
+In the case of an App.net annotation, the JSON representation should be wrapped into a **value** field with a type value of **org.podlove.podcast-description**.
+
+	{
+		"type": "org.podlove.podcast-description",
+		"value": 
+		{
+			"title": "Podlove Podcast",
+			...
+		}
+	}
 		
