@@ -122,23 +122,23 @@ A podcast episode is provided to the user in form of media files. These may be a
 		</summary>
 		<homepage>http://podlove.org/example/podcast</homepage>
 		<image>http://podlove.org/example/podcast-image.jpg</image>
-		<feeds>
-			<feed>
-				<feed-title>MP3 Audio</feed-title>
-				<feed-url>
-					http://podlove.org/example/podlove-feed-mp3.rss
-				</feed-url>
-				<enclosure-mime-type>audio/mpeg</enclosure-mime-type>
-			</feed>
+		<media-files>
+			<media-file>
+				<file-title>MP3 Audio</feed-title>
+				<file-url>
+					http://podlove.org/example/episode-xxx.mp3
+				</file-url>
+				<file-mime-type>audio/mpeg</enclosure-mime-type>
+			</media-file>
 			
-			<feed>
-				<feed-title>MP4 Audio</feed-title>
-				<feed-url>
-					http://podlove.org/example/podlove-feed-m4a.rss
-				</feed-url>
-				<enclosure-mime-type>audio/mp4</enclosure-mime-type>
-			</feed>
-		</feeds>
+			<media-file>
+				<file-title>MP4 Audio</feed-title>
+				<file-url>
+					http://podlove.org/example/episode-xxx.m4a
+				</file-url>
+				<file-mime-type>audio/mp4</enclosure-mime-type>
+			</media-file>
+		</media-files>
 	</podcast>
 
 ## JSON Representation ##
@@ -152,16 +152,16 @@ In comparison to the XML representation described above, the JSON representation
 		"subtitle": "Insights and outlooks by the Podlove project",
 		"summary": "The Podlove team updates creators and developers on the latest thinking behind the Podlove project, it's software projects and standards.\nThe podcast is delivered bi-weekly and welcomes feedback on any level. Join as we try to shape the future of podcasting for the greater good.", 
 		"homepage": "http://podlove.org/example/podcast",
-		"feeds": [
+		"media-files": [
 			{
-				"feed-title": "MP3 Audio",
-				"feed-url": "http://podlove.org/example/podlove-feed-mp3.rss",  
-				"enclosure-mime-type": "audio/mpeg"
+				"file-title": "MP3 Audio",
+				"file-url": "http://podlove.org/example/episode-xxx.mp3",  
+				"file-mime-type": "audio/mpeg"
 			},
 			{
-				"feed-title": "MP4 Audio",
-				"feed-url": "http://podlove.org/example/podlove-feed-m4a.rss", 
-				"enclosure-mime-type": "audio/mp4"
+				"file-title": "MP4 Audio",
+				"file-url": "http://podlove.org/example/episode-xxx.m4a", 
+				"file-mime-type": "audio/mp4"
 			}
 		]
 	}
