@@ -72,6 +72,15 @@ Mandatory: no
 
 A `mnemonic` is a shorthand or abbreviation of the podcasts title meant to create simple references to the podcast itself or its episodes (usually in combination with episode numbers or other identifiers). A mnemonic is rather popular for referring to shows especially in communication environments with constrained message lengths.
 
+### Language ###
+
+Identifier: `language`  
+Type: `text`  
+Properties: n/a  
+Mandatory: no
+
+The `language` denotes the language that is usually spoken in the given podcast. Episodes may feature other languages but usually don't. If the podcast usually features different languages in each episodes, no general language should be specified.
+
 ### Link ###
 
 Identifier: `link`  
