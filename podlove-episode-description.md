@@ -64,6 +64,15 @@ However, the summary should still be a rather compact explanation of the episode
 The `summary` is made up of plain text only and MUST NOT contain any HTML or other markup.
 
 
+### Language ###
+
+Identifier: `language`  
+Type: `text`  
+Properties: n/a  
+Mandatory: no
+
+The `language` denotes the main language spoken in the given episode. The value must be an IETF language tag as defined by RFC5646 [^RFC5646].
+
 ### Link ###
 
 Identifier: `link`  
@@ -177,3 +186,6 @@ In the case of an App.net annotation, the JSON representation should be wrapped 
 			...
 		}
 	}	
+
+
+[^RFC5646]: [RFC5646: Tags for Identifying Languages](http://tools.ietf.org/html/rfc5646)
