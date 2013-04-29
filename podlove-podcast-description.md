@@ -79,7 +79,7 @@ Type: `text`
 Properties: n/a  
 Mandatory: no
 
-The `language` denotes the language that is usually spoken in the given podcast. Episodes may feature other languages but usually don't. If the podcast usually features different languages in each episodes, no general language should be specified.
+The `language` denotes the language that is usually spoken in the given podcast. Episodes may feature other languages but usually don't. If the podcast usually features different languages in each episodes, no general language should be specified. The value must be an IETF language tag as defined by RFC5646 [^RFC5646].
 
 ### Link ###
 
@@ -192,3 +192,5 @@ In the case of an App.net annotation, the JSON representation should be wrapped 
 		}
 	}
 		
+		
+[^RFC5646]: [RFC5646: Tags for Identifying Languages](http://tools.ietf.org/html/rfc5646)
