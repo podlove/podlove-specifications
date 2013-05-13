@@ -10,10 +10,10 @@ Podlove Simple Chapters is an XML 1.0 based format meant to extend file formats 
 
 ## Change Log ##
 
-    2013-03-31: 1.2 - Replaced time format spec with Normal Play Time
-    2012-11-18: 1.1 - Add option to link external file in feed.
-                      XML namespace prefix changed to "psc:"
-                      Added optional image attribute
+    2013-03-31: Replaced time format spec with Normal Play Time
+    2012-11-18: Add option to link external file in feed.
+                XML namespace prefix changed to "psc:"
+                Added optional image attribute, bumped spec to version 1.1
     2012-03-26: 1.0 - Initial Release
 
 ## Motivation and Scope ##
