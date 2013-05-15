@@ -120,7 +120,7 @@ A podcast episode is provided to the user in form of media files. These may be a
 			feedback on any level. Join as we try to shape the
 			future of podcasting for the greater good.
 		</summary>
-		<homepage>http://podlove.org/example/podcast</homepage>
+		<link>http://podlove.org/example/podcast</link>
 		<image>http://podlove.org/example/podcast-image.jpg</image>
 		<media-files>
 			<media-file>
@@ -151,7 +151,7 @@ In comparison to the XML representation described above, the JSON representation
 		"title": "Podlove Episode",
 		"subtitle": "Insights and outlooks by the Podlove project",
 		"summary": "The Podlove team updates creators and developers on the latest thinking behind the Podlove project, it's software projects and standards.\nThe podcast is delivered bi-weekly and welcomes feedback on any level. Join as we try to shape the future of podcasting for the greater good.", 
-		"homepage": "http://podlove.org/example/podcast",
+		"link": "http://podlove.org/example/podcast",
 		"media-files": [
 			{
 				"file-title": "MP3 Audio",
