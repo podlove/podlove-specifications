@@ -12,7 +12,7 @@ Podlove Episode Description is a general specification listing essential metadat
 
 	2013-04-13: 0.1 - Initial Draft
 
-## Moptivation and Scope ##
+## Motivation and Scope ##
 
 Podcasts were created on top of the technical grounds of blogs but have since developed into an independent media type on the Internet that adheres to different rules and needs different treatment.
 
