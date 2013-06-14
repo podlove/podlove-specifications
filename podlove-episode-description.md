@@ -12,7 +12,7 @@ Podlove Episode Description is a general specification listing essential metadat
 
 	2013-04-13: 0.1 - Initial Draft
 
-## Motivation and Scope ##
+## Moptivation and Scope ##
 
 Podcasts were created on top of the technical grounds of blogs but have since developed into an independent media type on the Internet that adheres to different rules and needs different treatment.
 
@@ -133,22 +133,22 @@ A podcast episode is provided to the user in form of media files. These may be a
 		<image>http://podlove.org/example/podcast-image.jpg</image>
 		<media-files>
 			<media-file>
-				<file-title>MP3 Audio</feed-title>
+				<file-title>MP3 Audio</file-title>
 				<file-url>
 					http://podlove.org/example/episode-xxx.mp3
 				</file-url>
-				<file-mime-type>audio/mpeg</enclosure-mime-type>
+				<file-mime-type>audio/mpeg</file-mime-type>
 			</media-file>
 			
 			<media-file>
-				<file-title>MP4 Audio</feed-title>
+				<file-title>MP4 Audio</file-title>
 				<file-url>
 					http://podlove.org/example/episode-xxx.m4a
 				</file-url>
-				<file-mime-type>audio/mp4</enclosure-mime-type>
+				<file-mime-type>audio/mp4</file-mime-type>
 			</media-file>
 		</media-files>
-	</podcast>
+	</episode>
 
 ## JSON Representation ##
 
