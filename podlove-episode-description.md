@@ -1,6 +1,6 @@
 Title: Podlove Episode Description
 Author: Tim Pritlove  
-Version: 0.1  
+Version: 0.2  
 Tags: podlove, podcast, description
 Status: Under developement  
 
@@ -11,6 +11,7 @@ Podlove Episode Description is a general specification listing essential metadat
 ## Change Log ##
 
 	2013-04-13: 0.1 - Initial Draft
+	2013-06-07: 0.2 - Added guid element
 
 ## Motivation and Scope ##
 
@@ -62,6 +63,15 @@ A `summary` is a much more precise and elaborate description of the podcast epis
 However, the summary should still be a rather compact explanation of the episode that is not yet conveyed by `title` and `subtitle` alone. And while technically a summary can be provided without also listing a subtitle, it would be bad practice to do so. The cascade of *Title > Subtitle > Summary* is an ideal source for software and devices that dynamically want to unfold more information about a podcast in its user interface.
 
 The `summary` is made up of plain text only and MUST NOT contain any HTML or other markup.
+
+### GUID ###
+
+Identifier: `guid`  
+Type: `text`  
+Properties: n/a  
+Mandatory: yes
+
+The `guid` refers to the GUID that is used to identify the episode within the feeds of the podcast. This field allows clients to retrieve the full entry of the episode in the feed. It is assumed that the same GUID is used in all feeds that include this episode.
 
 
 ### Language ###
