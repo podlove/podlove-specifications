@@ -1,6 +1,6 @@
 Title: Podlove Podcast Description
 Author: Tim Pritlove  
-Version: 0.1  
+Version: 0.2  
 Tags: podlove, podcast, description
 Status: Under developement  
 
@@ -11,6 +11,7 @@ Podlove Podcast Description is a general specification listing essential metadat
 ## Change Log ##
 
 	2013-04-09: 0.1 - Initial Draft
+	2013-06-07: 0.2 - Removed mnemonic element
 
 ## Motivation and Scope ##
 
@@ -63,14 +64,6 @@ However, the summary should still be a rather compact explanation of the podcast
 
 The `summary` is made up of plain text only and MUST NOT contain any HTML or other markup.
 
-### Mnemonic ###
-
-Identifier: `mnemonic`  
-Type: `text`  
-Properties: n/a  
-Mandatory: no
-
-A `mnemonic` is a shorthand or abbreviation of the podcasts title meant to create simple references to the podcast itself or its episodes (usually in combination with episode numbers or other identifiers). A mnemonic is rather popular for referring to shows especially in communication environments with constrained message lengths.
 
 ### Language ###
 
