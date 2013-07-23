@@ -87,8 +87,7 @@ Throughout this document, we refer to this XML namespace using the namespace pre
 
     <?xml version="1.0" encoding="utf-8"?>
     <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
-        xmlns:podlove="http:podlove.org/syndication">
-
+        xmlns:podlove="http://podlove.org/syndication">
 
 
 ## Web Page Extensions ##
@@ -101,7 +100,7 @@ Within a HTML page that represents a podcast, the following elements and attribu
 
 The `<podlove:podcast>` element should be placed into the `<head>` section of a HTML page when the page represents a podcast. The presence of this element also indicates that more meta data should be available pointing to one or more podcast feeds.
 
-* <podlove:podcast type="*audio|video|ebook|mixed|other" guid="*podcast-guid*">
+* `<podlove:podcast type="*audio|video|ebook|mixed|other" guid="*podcast-guid*">`
 
 The `type` attribute is optional and informs applications of the type of media that is associated with the podcast (see definition above).
 
@@ -112,7 +111,7 @@ The  `guid`  attribute is optional and should contains the podcast guid (see def
 
 The `<podlove:episode>` element should be placed into the `<head>` section of a HTML page when the page represents a podcast episode.
 
-* <podlove:episode type="audio|video|ebook|other" guid="*episode-guid*">
+* `<podlove:episode type="audio|video|ebook|other" guid="*episode-guid*">`
 
 This element is helpful web applications that want to automatically detect podcast episodes when looking at an URL. The episode guid can be used to look up the episode within a podcast feed to get to the associated media files.
 
@@ -136,7 +135,7 @@ Within a podcast feed that represents a podcast, the following elements and attr
 
 The `<podlove:podcast>` element should be placed into the `<channel>` section of a RSS podcast feed or the `<feed>` section of an Atom podcast feed. The element enables applications to automatically treat a feed as a podcast feed. The GUID can be helpful to associate the feed with other feeds on the fly.
 
-* <podlove:podcast type="*audio|video|ebook|mixed|other" guid="*podcast-guid*">
+* `<podlove:podcast type="*audio|video|ebook|mixed|other" guid="*podcast-guid*">`
 
 The `type` attribute is optional and informs applications of the type of media that is associated with the podcast (see definition above).
 
