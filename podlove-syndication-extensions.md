@@ -7,7 +7,9 @@ To Do: Combine HTML and RSS elements; come up with better ideas for feed declara
 
 # Podlove Syndication Extensions #
 
-The Podlove Syndication Extensions are a set of XML elements and attributes meant to complement and enrich HTML web pages and XML podcast feeds to make podcast media much more visible on the web, improve the overall integrity of the podcasting process and to introduce new and helpful features for podcast clients, directories and other elements of the podcast infrastructure.
+The Podlove Syndication Extensions are a set of XML elements and attributes meant to complement and enrich HTML web pages and RSS podcast feeds.
+
+The aim is to make podcast media much more visible on the web, improve the overall integrity of the podcasting process and to introduce new and helpful features for podcast clients, directories and other elements of the podcast infrastructure.
 
 ## Change Log ##
 
@@ -17,7 +19,7 @@ The Podlove Syndication Extensions are a set of XML elements and attributes mean
 
 Podcasts were created on top of the technical grounds of blogs but have since developed into an independent media type on the Internet that adheres to different rules and needs different treatment.
 
-The Podlove Syndication Extensions are meant to improve auto-detection of podcasts and their feeds and allow for more podcast metadata in feeds and web sites.
+The Podlove Syndication Extensions treat podcasts as a first class web citizen and are meant to improve auto-detection of podcasts and their feeds and allow for more podcast metadata in feeds and web sites.
 
 The extensions try not to reinvent the wheel but to build up on what is already used and well-established. Much like the iTunes RSS Extensions [^iTunesRSSExtensions] did a good job improving feed metadata empowering clients and directories, the Podlove Syndication Extensions address areas where information tends to be missing or ambiguous and where automatic discovery of important information is difficult.
 
@@ -32,7 +34,13 @@ By supporting the Podlove Syndication Extensions systems and applications will g
 
 The extensions specifically target the needs of podcast directories and podcast clients by providing information that can both be easily provided and read.
 
-## Podcast URI ##
+##General Definitions##
+
+The podcast world suffers from a lack of good standards and best practice specifications which has troubled developers and podcasters alike too long.
+
+To understand the thinking behind the meaning of particular elements and attributes we first explain certain assumptions and define usage of some elements that either exist today (which we assign a certain meaning to) or concepts that we introduce with this specification.
+
+### Podcast URI ###
 
 This specification assumes that each podcast can and should be assigned a globally unique URI. This is possible with the `<podlove:podcast>`  element as described in this specification.
 
@@ -43,14 +51,26 @@ The Podlove Syndication Extensions assume such a URI exists and provides the ele
 A Podcast URI makes life easier for podcast directories (as they can easily group feeds within the database representing the same podcast) and podcast clients (as they can safely select from a list of feeds and exclude non-associated feeds when presenting options to the user). Other uses may arise in the future when the idea spreads.
 
 
-## Episode GUID ##
+### Episode GUID ###
 
-An episode GUID is the globally unique ID that is commonly known as the `<guid>` element in RSS or the `<id>` (Atom) elements in feeds. The episode GUID already plays an important role in the podcast infrastructure as it is the deciding element that podcast clients should use to reference an episode.
+An episode GUID is the globally unique ID that is commonly known as the `<guid>` element in RSS (or the `<id>`  element in Atom). The episode GUID already plays an important role in the podcast infrastructure as it is the deciding element that podcast clients should use to reference an episode.
 
 This specification considers the episode GUID to refer to the episode *as such*, not just the entry in a feed. If a podcast has multiple feeds and a single episode is referred to by more than one of the feeds, each entry in every referring feed *must* use the same episode GUID.
 
+### RSS vs. Atom ###
 
-## Podcast Type ##
+The web world has been fighting the feed format war since the early beginning. We try to not to be too religious about this so let's just explain how we think things have turned out and should be treated today.
+
+RSS kicked of the syndication revolution and while being a rather under defined  standard leaving a lot of things in the open, it worked really well for most applications. Atom was pushed by people who cared a lot about semantics and saw the flaws of RSS from the beginning. But it never completely replaced RSS, especially not in the podcast world.
+
+While many blogs syndicate content via Atom feeds, the Atom standard – while being a very sophisticated well-designed format – has never caught on with podcasts. Almost every podcast feed out there is based on RSS 2.0 [^RSS2.0] and popular extensions like the iTunes Extensions [^iTunesRSSExtensions] explicitly extend RSS while they could also be used with Atom but usually nobody really cares to test the cases.
+
+As RSS is an XML-based format, extending RSS is straightforward and well-defined. That's what XML is all about and Atom is actually used more as an extension to RSS than as a standalone format. The rather strict definitions in Atom are also not always helpful when trying to come up with practical solutions.
+
+That's why we define the Podlove Syndication Extensions to extend HTML and RSS primarily. But you could use it on Atom feeds (and probably other formats) too. Your mileage may vary. However, this specification does not define usage of the extensions in Atom standalone documents.
+
+
+### Podcast Type ###
 
 Podcasts are technically just feeds pointing to arbitrary files (the so-called "enclosures"). However, practical usage of podcasts has created a well-established set of types of podcasts that software has learned to expect and deal with.
 
@@ -73,16 +93,20 @@ In order to inform applications about a particular podcast type, this specificat
 **other**
 :     The podcast is a special podcast that does not fit in the usual concept of a podcast while still delivering enclosures of some kind.
 
+### Podcast Feeds ###
+
+Podcasts were created out of a late addition to the RSS specification. RSS 2.0 [^RSS2.0] defined the `enclosure` element that links to a media file. This could be seen as a media file being "attached" to an original article but in reality, the podcast landscape treats the enclosure as being the original feed content with the rest being treated as "descriptions" or "show notes".
+
+Podcast support in iTunes 4.7 supported this notion  to the extreme, essentially ignoring entries without enclosures and treating enclosure-less feeds as "invalid podcast feeds". It is common practice to convey blog information in separate feeds although web based feed readers have been encouraging the dual use of feeds.
+
+But the reality is that podcast feeds stand out and can and should be considered to be something different from blog feeds. 
+
+The Podlove Syndication Extensions explicitly treat podcast feeds as a separate entity and assign special importance and assumes distinct behaviour of both creating and consuming applications.
 
 
 ##XML Namespace##
 
-The extensions are split in two groups:
-
-* Web Page Extensions
-* Feed Extensions
-
-Because these groups are highly related, all elements share the same XML namespace although most of the elements are useful in just one group. The aim is to bring websites and feeds closer together.
+The Podlove Syndication Extensions extend both web pages (HTML) and podcast feeds (RSS). Some elements are just meant to extend HTML, others only make sense within feeds. But since some elements are useful in both groups, all elements share the same XML namespace.
 
 The XML namespace for the Podlove Syndication Extensions is
 
@@ -148,3 +172,4 @@ The  `uri`  attribute is optional and should contains the podcast URI (see defin
 
 [^iTunesRSSExtensions]: [iTunes RSS Tags](http://www.apple.com/itunes/podcasts/specs.html#rss)
 [^Podlove Alternate Feeds]: [Podlove Alternate Feeds](http://podlove.org/alternate-feeds)
+[^RSS2.0]: RSS 2.0 Specification: <http://cyber.law.harvard.edu/rss/rss.html>
