@@ -2,7 +2,8 @@ Title: Podlove Syndication Extensions
 Author: Tim Pritlove  
 Version: 0.2  
 Tags: podlove, podcast, syndication, feeds, auto-discovery 
-Status: Under development  
+Status: Under development
+To Do: Combine HTML and RSS elements; come up with better ideas for feed declaration (maybe without atom:link); add examples
 
 # Podlove Syndication Extensions #
 
@@ -119,15 +120,15 @@ The `<podlove:episode>` element should be placed into the `<head>` section of a 
 
 This element is helpful web applications that want to automatically detect podcast episodes when looking at an URL. The episode guid can be used to look up the episode within a podcast feed to get to the associated media files.
 
-###Attributes for <atom:link> element ###
+###<atom:link> ###
 
-The `<atom:link>` element is used in HTML feeds to point to other web resources including but not limited to podcast feeds. When pointing to a feed, 
+(THIS SECTION IS UNDER CONSTRUCTION AND TOTAL WORK IN PROGRESS AND SHOULD BE IGNORED - FOR NOW)
 
-* podlove:feed-type="podcast|blog|comments"
-* podlove:podcast-type-type="audio"
-* podlove:enclosure-mime-type="audio/mpeg"
-* podlove:protocol="http|bittorrent"
+The `<atom:link>` element is used in HTML feeds to point to other web resources including but not limited to podcast feeds. The Podlove Syndication Extensions provide attributes that augment this pointer with valuable information for podcast clients or podcast directory crawlers.
 
+These attributes can be used both in HTML as well as RSS when pointing to other feeds. They work especially well with the Podlove Alternate Feeds [^Podlove Alternate Feeds] recommendation.
+
+* `<atom:link rel="alternate" type="application/rss+xml" href="*feed-url*" podlove:feed-type="podcast|blog|comments" podlove:podcast-type="audio|video|ebook" podlove:enclosure-mime-type="audio/mpeg" podlove:protocol="http|bittorrent">`
 
 ## Podcast feed extensions ##
 
@@ -146,3 +147,4 @@ The `type` attribute is optional and informs applications of the type of media t
 The  `uri`  attribute is optional and should contains the podcast URI (see definition above)
 
 [^iTunesRSSExtensions]: [iTunes RSS Tags](http://www.apple.com/itunes/podcasts/specs.html#rss)
+[^Podlove Alternate Feeds]: [Podlove Alternate Feeds](http://podlove.org/alternate-feeds)
