@@ -6,7 +6,7 @@ Status: Current
 
 # Podlove Deep Linking #
 
-Podlove Deep Linking is a method for describing direct access to audio or video content in Podcast Feeds. It is a very simple extension to a feed that tells a podcast client how to link back to a certain point in time on the podcast's web site.
+Podlove Deep Linking is a method for describing direct access to audio or video content in Podcast Feeds. It is a very simple extension to a feed that tells a podcast client how to link back to a certain point in time on the podcast's web site, as well as auto-play it.
 
 The same addressing scheme can also be used by web-based media players to construct links to specific points or ranges in the media, either by generating URLs for users to pass on or to be updated in the URL field of the browser.
 
@@ -98,6 +98,28 @@ Here are some examples that show how the time field can be used:
 
 For more examples and a full specification of the Normal Play Time syntax, consult the Media Fragments [^FRAGMENTS] specification.
 
+## Appending Auto-Play Information ##
+
+Website players should support an *autoplay* parameter. If the *autoplay* parameter is present and equal to "1", the media should be played as soon as possible (e.g. after page has loaded and first few seconds of the media have been buffered). If the *autoplay* parameter is present and equal to "0", the media should not be played until the user explicitly requsts it. If there is no *autoplay* parameter or the *autoplay* parameter is neither "0" nor "1", it is up to the player to decide whether playback is immediate. This decision is application-specific.
+
+*autoplay* is independent of time range and should therefore be supported whether time range (or any other parameter) is present or not. If both are present, the automatic playback should adhere to the specified time range (as one would expect).
+
+Note: It's not expected that the *autoplay* parameter would appear in a feed, nor must clients allow users to interactively set it (though they may). Players, however *should* support URLs containing the *autoplay* parameter.
+
+Examples of *autoplay*:
+
+>**`autoplay=1`**
+:play from 00:00 as soon as possible, without waiting for user action
+
+>**`autoplay=1&t=4:30-6:15`**
+:play from 4:30 to 6:15 as soon as possible, without waiting for user action
+
+>**`autoplay=0`**
+:wait for user action before any playback occurs
+
+>**`autoplay=garbage`**
+:autoplay has no effect because value is unrecognised, hence player decides whether to start immediately based on other factors
+
 ## Additional Fragment Parameters ##
 
 The Media Fragments [^FRAGMENTS]specification requires the media fragment specifier to be a parameter following a hash sign ("#") and allows for additional parameters to be passed along. As the podcast client is expected to add just the time range information, any additional parameters that your web player might need must be included in the URL stated in the feed following the fragment identifier.
@@ -116,6 +138,6 @@ Right now, this specification does not define any other parameters but might in 
 
 Once the deep link information has been placed in the podcast feed, the website referenced *SHOULD* be ready to play back the media content directly. The website player *SHOULD* start playing at the given start time and *SHOULD* pause playback after the optionally given end time is reached for the first time.
 
-It is up to the player to decide if playback should be immediate after loading the URL or if the user still needs to explicitly start playback using UI controls.
+Once the URL has been loaded, the player should decide whether to play immediately based on the *autoplay* rules declared earlier in this specification.
 
 [^FRAGMENTS]: Media Fragments URI 1.0 <http://www.w3.org/TR/2012/PR-media-frags-20120315/>
