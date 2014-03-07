@@ -140,7 +140,7 @@ The  `uri`  attribute is optional and should contains the podcast URI (see defin
 
 The `<podlove:episode>` element should be placed into the `<head>` section of a HTML page when the page represents a podcast episode.
 
-* `<podlove:episode type="audio|video|ebook|other" guid="*episode-guid*">`
+> `<podlove:episode type="audio|video|ebook|other" guid="*episode-guid*">`
 
 This element is helpful web applications that want to automatically detect podcast episodes when looking at an URL. The episode guid can be used to look up the episode within a podcast feed to get to the associated media files.
 
@@ -152,7 +152,7 @@ The `<atom:link>` element is used in HTML feeds to point to other web resources 
 
 These attributes can be used both in HTML as well as RSS when pointing to other feeds. They work especially well with the Podlove Alternate Feeds [^Podlove Alternate Feeds] recommendation.
 
-* `<atom:link rel="alternate" type="application/rss+xml" href="*feed-url*" podlove:feed-type="podcast|blog|comments" podlove:podcast-type="audio|video|ebook" podlove:enclosure-mime-type="audio/mpeg" podlove:protocol="http|bittorrent">`
+> `<atom:link rel="alternate" type="application/rss+xml" href="*feed-url*" podlove:feed-type="podcast|blog|comments" podlove:podcast-type="audio|video|ebook" podlove:enclosure-mime-type="audio/mpeg" podlove:protocol="http|bittorrent">`
 
 ## Podcast feed extensions ##
 
