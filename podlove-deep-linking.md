@@ -118,4 +118,4 @@ Once the deep link information has been placed in the podcast feed, the website 
 
 It is up to the player to decide if playback should be immediate after loading the URL or if the user still needs to explicitly start playback using UI controls.
 
-[^FRAGMENTS]: Media Fragments URI 1.0 <http://www.w3.org/TR/2012/PR-media-frags-20120315/>
+[^FRAGMENTS]: Media Fragments URI 1.0 <http://www.w3.org/TR/media-frags/>
