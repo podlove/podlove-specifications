@@ -50,7 +50,7 @@ As it is independant from a specific scheduled show this element is added to the
 The `<pse:live-streaming>` element accepts the following attributes:
 
 >**`info-url="url"`**
-:    This is an URL pointing to a website which provides all additional information the podcaster wants to share with his livestream listeners (like chat information, iCal for the live shows, ...)
+:    This is an URL pointing to a website which provides all additional information the podcaster wants to share with his livestream listeners (like chat information, iCal for the live shows, ...). This attribute is optional.
 
 ### <pse:time> ###
 
