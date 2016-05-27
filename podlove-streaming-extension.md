@@ -19,7 +19,6 @@ Many podcasts livestream their shows to a big audience in addition to only distr
 * When does a livestream take place? How long will the show be?
 * How can one listen to it?
 * Title, Subtitle, Description
-* Who will be on the show? (Collaborators)
 
 We think it is important to distribute livestream information as open as possible to keep it independant from a specific livestreaming service. The best place for this kind of information is the podcast feed as everyone can fetch and parse it to get the information.
 
