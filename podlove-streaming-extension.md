@@ -1,7 +1,7 @@
-Title: Podlove Streaming Extension
+Title: Podlove Streaming Extension  
 Author: Tim Pritlove, Stefan Trauth  
-Version: 1.0
-Tags: podlove, podcast, live, streaming, stream, feeds, atom, rss
+Version: 1.0  
+Tags: podlove, podcast, live, streaming, stream, feeds, atom, rss  
 Status: Current  
 
 # Podlove Streaming Extension #
