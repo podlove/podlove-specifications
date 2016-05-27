@@ -54,7 +54,17 @@ The `<pse:live-streaming>` element accepts the following attributes:
 
 ### <pse:time> ###
 
+The `<pse:time>` element defines the start and end time of a live show represented as an `<atom:entry>` element in an Atom [^ATOM] feed or within an `<item>`  element within an RSS 2.0 [^RSS2] channel.
 
+There **must** be only one `<pse:time>` element. Clients **should** ignore extra `<pse:time>` elements.
+
+The `<pse:time>` element accepts the following attributes:
+
+>**`start="date"`**
+:    This attribute defines the start date and time of the live show. This attribute is **mandatory**.
+
+>**`end="date"`**
+:    This attribute defines the end date and time of the live show. This attribute is optional.
 
 ### <pse:streams> and <pse:stream> ###
 
