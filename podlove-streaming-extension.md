@@ -41,13 +41,13 @@ The Streaming Extension specification defines five elements:
 
 The main idea is to schedule livestream shows as `items` in the feed without adding an `enclosure`. This way the live show items will be ignored by standard podcast clients.
 
-### <pse:lives-streaming> ###
+### <pse:live-streaming> ###
 
-The `<pse:lives-streaming>` element works as an indicator to show that this podcast does live shows. This allows podcast directories to filter for just this information.
+The `<pse:live-streaming>` element works as an indicator to show that this podcast does live shows. This allows podcast directories to filter for just this information.
 
-As it is independant from a specific scheduled show this element is added to the `<channel>` element.
+As it is independant from a specific scheduled show this element is added to the `<channel>` element. The `<pse:live-streaming>` element **must be present** if the podcast supports live streaming.
 
-The `<pse:lives-streaming>` element accepts the following attributes:
+The `<pse:live-streaming>` element accepts the following attributes:
 
 >**`info-url="url"`**
 :    This is an URL pointing to a website which provides all additional information the podcaster wants to share with his livestream listeners (like chat information, iCal for the live shows, ...)
