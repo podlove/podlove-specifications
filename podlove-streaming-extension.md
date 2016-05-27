@@ -76,7 +76,7 @@ The `<pse:time>` element accepts the following attributes:
 
 ## Embedding Example ##
 
-This is an simple example of a RSS podcast feed with embedded chapter information in Podlove Simple Chapter format:
+This is a simple example of a RSS podcast feed with embedded livestream information in the Podlove Streaming Extension format:
 
 ```xml
 <channel>
