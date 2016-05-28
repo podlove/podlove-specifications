@@ -79,6 +79,10 @@ The `<pse:time>` element accepts the following attributes:
 This is a simple example of a RSS podcast feed with embedded livestream information in the Podlove Streaming Extension format:
 
 ```xml
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:psc="http://podlove.org/simple-chapters" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:fh="http://purl.org/syndication/history/1.0" xmlns:pse="http://podlove.org/live-streaming">
+
 <channel>
 	<title>Funkenstrahlen</title>
 	<itunes:subtitle>Die Nachlese aus dem Apple Special Event</itunes:subtitle>
