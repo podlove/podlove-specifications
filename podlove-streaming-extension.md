@@ -75,6 +75,21 @@ The `<pse:time>` element accepts the following attributes:
 ### <pse:wehbook-registration> ###
 
 
+### <pse:webbook-registration> ###
+
+The feed only contains basic metadata about scheduled live shows. If you are interested in realtime information about a running livestream you can consider registering to a webhook. The webhook is usually provided by streaming backend of the podcaster.
+
+This way you can get realtime information:
+
+* Is the stream already running?
+* Did the show start?
+* How many people are currently listening to the livestream?
+
+The `<pse:webhook-registration>` element defines 
+
+*TODO: registration protocol*
+
+*TODO: webhook protocol*
 
 ## Embedding Example ##
 
