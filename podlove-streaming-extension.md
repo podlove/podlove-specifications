@@ -123,6 +123,10 @@ This is a simple example of a RSS podcast feed with embedded livestream informat
 </channel>
 ```
 
+## Pubsubhubbub ##
+
+If you parse podcast feeds for livestream information please consider supporting Pubsubhubbub. With Pubshubhubbub you can get a realtime notification if the feed content is updated. This is especially helpful for shows that are scheduled only a short time before going live. This only works for podcast feeds supporting Pubsubhubbub of course.
+
 [^ATOM]: The Atom Syndication Format: <http://www.atomenabled.org/developers/syndication/atom-format-spec.php>
 
 [^RSS2]: RSS 2.0 Specification: <http://cyber.law.harvard.edu/rss/rss.html>
