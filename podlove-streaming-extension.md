@@ -104,7 +104,7 @@ The `<pse:stream>` element accepts the following attributes:
 
 ### <pse:webbook-registration> ###
 
-The feed only contains basic metadata about scheduled live shows. If you are interested in realtime information about a running livestream you can consider registering to a webhook. The webhook is usually provided by streaming backend of the podcaster.
+The feed only contains basic metadata about scheduled live shows. If you are interested in realtime information about a running livestream you can consider registering to a webhook. The webhook is usually provided the by streaming backend of the podcaster.
 
 This way you can get realtime information:
 
