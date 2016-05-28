@@ -66,6 +66,8 @@ The `<pse:time>` element accepts the following attributes:
 >**`end="date"`**
 :    This attribute defines the end date and time of the live show. This attribute is optional.
 
+*TODO: Define time format*
+
 ### <pse:streams> and <pse:stream> ###
 
 
