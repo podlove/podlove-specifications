@@ -70,10 +70,37 @@ The `<pse:time>` element accepts the following attributes:
 
 ### <pse:streams> and <pse:stream> ###
 
+The `<pse:streams>` element defines the available stream sources within an `<atom:entry>` element in an Atom [^ATOM] feed or within an `<item>`  element within an RSS 2.0 [^RSS2] channel.
 
+There **must** be **one or more** `<psc:streams>` elements. Each `<psc:streams>` element **must** contain **one or more** `<psc:stream>` elements.
 
-### <pse:wehbook-registration> ###
+The `<pse:streams>` element accepts the following attributes:
 
+>**`media="type"`**
+:    This attribute defines if this is an audio or a video livestream. Possible values are: `audio` or `video`. This attribute is **mandatory**.
+
+>**`title="string"`**
+:    This attribute defines a title for this livestream source. This attribute is optional.
+
+>**`lang="TODO"`**
+:    This attribute defines the language of this livestream source. It contains a comma separated list of language codes (like "de"). This attribute is optional.
+
+The `<pse:stream>` element accepts the following attributes:
+
+>**`type="TODO"`**
+:    This attribute defines the stream type, e.g. `icecast`, `hls` or `dash`. This attribute is **mandatory**.
+
+>**`title="string"`**
+:    This attribute defines the title of this stream source. This attribute is optional.
+
+>**`mime-type="TODO"`**
+:    This attribute defines the mime-type of this stream source, e.g. `audio/opus` or `audio/mp3`. This attribute is **mandatory**.
+
+>**`bitrate="number"`**
+:    This attribute defines the bitrate of the audio stream source. It is defined as bits per second. This attribute is optional.
+
+>**`url="URL"`**
+:    This attribute defines the stream source url. This attribute is **mandatory**.
 
 ### <pse:webbook-registration> ###
 
