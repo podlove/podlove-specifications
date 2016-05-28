@@ -52,6 +52,12 @@ The `<pse:live-streaming>` element accepts the following attributes:
 >**`info-url="url"`**
 :    This is an URL pointing to a website which provides all additional information the podcaster wants to share with his livestream listeners (like chat information, iCal for the live shows, ...). This attribute is optional.
 
+Example:
+
+```xml
+<pse:live-streaming info-url="http://freakshow.fm/live"/>
+```
+
 ### <pse:time> ###
 
 The `<pse:time>` element defines the start and end time of a live show represented as an `<atom:entry>` element in an Atom [^ATOM] feed or within an `<item>`  element within an RSS 2.0 [^RSS2] channel.
@@ -65,6 +71,12 @@ The `<pse:time>` element accepts the following attributes:
 
 >**`end="date"`**
 :    This attribute defines the end date and time of the live show. This attribute is optional.
+
+Example:
+
+```xml
+<pse:time start="2015-03-28T12:34+1" end="2015-03-28T17:34+1">
+```
 
 *TODO: Define time format*
 
@@ -83,7 +95,13 @@ The `<pse:streams>` element accepts the following attributes:
 :    This attribute defines a title for this livestream source. This attribute is optional.
 
 >**`lang="string array"`**
-:    This attribute defines the language of this livestream source. It contains a comma separated list of language codes (like "de"). This attribute is optional.
+:    This attribute defines the language of this livestream source. It contains a comma separated list of language codes, e.g. `de` or `en`. This attribute is optional.
+
+Example:
+
+```xml
+<pse:streams media="audio" title="Standard Audio" lang="de">...</pse:streams>
+```
 
 The `<pse:stream>` element accepts the following attributes:
 
@@ -102,6 +120,12 @@ The `<pse:stream>` element accepts the following attributes:
 >**`url="url"`**
 :    This attribute defines the stream source url. This attribute is **mandatory**.
 
+Example:
+
+```xml
+<pse:stream type="icecast" title="Deutsch OPUS" mime-type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene.opus" />
+```
+
 ### <pse:webbook-registration> ###
 
 The feed only contains basic metadata about scheduled live shows. If you are interested in realtime information about a running livestream you can consider registering to a webhook. The webhook is usually provided the by streaming backend of the podcaster.
@@ -113,6 +137,12 @@ This way you can get realtime information:
 * How many people are currently listening to the livestream?
 
 The `<pse:webhook-registration>` element defines 
+
+Example:
+
+```xml
+<pse:webhook-registration>URL</pse:webhook-registration>
+```
 
 *TODO: registration protocol*
 
