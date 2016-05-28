@@ -20,7 +20,7 @@ Many podcasts livestream their shows to a big audience in addition to only distr
 * How can one listen to it?
 * Title, Subtitle, Description
 
-We think it is important to distribute livestream information as open as possible to keep it independant from a specific livestreaming service. The best place for this kind of information is the podcast feed as everyone can fetch and parse it to get the information.
+It is important to distribute livestream information as open as possible to keep it independant from a specific livestreaming service. The best place for this kind of information is the podcast feed as everyone can fetch and parse it to get the information.
 
 ## XML Namespace ##
 
