@@ -187,6 +187,9 @@ This is a simple example of a RSS podcast feed with embedded livestream informat
 			<pse:stream title="English ADTS" mime-type="audio/aac-adts" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.aac" />
 			<pse:stream title="English AACP" mime-type="audio/aac-aacp" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.heaac" />
 		</pse:streams>
+		<pse:streams media="audio" title="Standard Audio" lang="de">
+			<pse:stream title="Deutsch MP3 hls" mime-type="application/x-mpegURL" url="http://master.studiolink.de/funkenstrahlen.mp3.m3u8" />
+		</pse:streams>
 		<pse:streams media="video" title="Standard Audio with Live Translation" lang="de">
 			<pse:stream title="Deutsch MPEG" mime-type="application/x-mpegURL" bitrate="128000" url="http://freakshow.fm/stream/hls.m3u8" />
 		</pse:streams>
