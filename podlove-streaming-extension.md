@@ -75,7 +75,7 @@ The `<pse:time>` element accepts the following attributes:
 Example:
 
 ```xml
-<pse:time start="2015-03-28T12:34+1" end="2015-03-28T17:34+1">
+<pse:time start="2015-03-28T12:34+1" end="2015-03-28T17:34+1"/>
 ```
 
 *TODO: Define time format*
@@ -167,7 +167,7 @@ This is a simple example of a RSS podcast feed with embedded livestream informat
 	    <title>FS002 - Arduino Blinkenlichter</title>
 	    <link>http://podcast.funkenstrahlen.de/2013/02/27/fs002-arduino-blinkenlichter/</link>
 	    <pubDate>Wed, 27 Feb 2013 08:46:18 +0000</pubDate>
-	    <pse:time start="2015-03-28T12:34+1" end="2015-03-28T17:34+1">
+	    <pse:time start="2015-03-28T12:34+1" end="2015-03-28T17:34+1"/>
 	    <guid isPermaLink="false">podlove-2015-05-17t15:21:00+00:00-9a6539d4d72f6e7</guid>
 	    <description>Die zweite Folge und schon eine Sonderfolge. Ich erzähle von meinem Arduino Projekt, an dem ich die letzten Tage gebastelt habe. Dabei versuche ich zu erklären wie man die LED-Leuchtleisten von IKEA an den Arduino anschließen kann, welche Bauteile man dafür braucht und wie ich es geschafft habe, dass man die Farbe der LEDs dann mit dem iPhone steuern kann. Durch die simple API bieten sich nun unendlich viele Möglichkeiten.</description>
 	    <atom:link rel="http://podlove.org/deep-link" href="http://podcast.funkenstrahlen.de/2013/02/27/fs002-arduino-blinkenlichter/#" />
