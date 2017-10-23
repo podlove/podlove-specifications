@@ -106,7 +106,7 @@ Example:
 The `<pse:stream>` element accepts the following attributes:
 
 >**`type="string"`**
-:    This attribute defines the stream type, e.g. `icecast`, `hls` or `dash`. This attribute is **mandatory**.
+:    This attribute defines the stream type, e.g. `http`, `hls` or `dash`. This attribute is **mandatory**.
 
 >**`title="string"`**
 :    This attribute defines the title of this stream source. This attribute is optional.
@@ -123,7 +123,7 @@ The `<pse:stream>` element accepts the following attributes:
 Example:
 
 ```xml
-<pse:stream type="icecast" title="Deutsch OPUS" mime-type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene.opus" />
+<pse:stream type="http" title="Deutsch OPUS" mime-type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene.opus" />
 ```
 
 ### <pse:webbook-registration> ###
@@ -177,21 +177,21 @@ This is a simple example of a RSS podcast feed with embedded livestream informat
 	    <itunes:image href="http://podcast.funkenstrahlen.de/wp-content/cache/podlove/fe/cf0a7a7dfb680f8da110c73274b623/fs002-arduino-blinkenlichter_original.png" />
 		<pse:webhook-registration>URL</pse:webhook-registration>
 		<pse:streams media="audio" title="Standard Audio" lang="de">
-			<pse:stream type="icecast" title="Deutsch MP3" mime-type="audio/mpeg" bitrate="128000" url="http://streams.xenim.de/metaebene.mp3" />
-			<pse:stream type="icecast" title="Deutsch OGG" mime-type="audio/ogg" bitrate="128000" url="http://streams.xenim.de/metaebene.ogg" />
-			<pse:stream type="icecast" title="Deutsch OPUS" mime-type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene.opus" />
-			<pse:stream type="icecast" title="Deutsch ADTS" mime-type="audio/aac-adts" bitrate="128000" url="http://streams.xenim.de/metaebene.aac" />
-			<pse:stream type="icecast" title="Deutsch AACP" mime-type="audio/aac-aacp" bitrate="128000" url="http://streams.xenim.de/metaebene.heaac" />
+			<pse:stream type="http" title="Deutsch MP3" mime-type="audio/mpeg" bitrate="128000" url="http://streams.xenim.de/metaebene.mp3" />
+			<pse:stream type="http" title="Deutsch OGG" mime-type="audio/ogg" bitrate="128000" url="http://streams.xenim.de/metaebene.ogg" />
+			<pse:stream type="http" title="Deutsch OPUS" mime-type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene.opus" />
+			<pse:stream type="http" title="Deutsch ADTS" mime-type="audio/aac-adts" bitrate="128000" url="http://streams.xenim.de/metaebene.aac" />
+			<pse:stream type="http" title="Deutsch AACP" mime-type="audio/aac-aacp" bitrate="128000" url="http://streams.xenim.de/metaebene.heaac" />
 		</pse:streams>
 		<pse:streams media="audio" title="Standard Audio with Live Translation" lang="en,gsw">
-			<pse:stream type="icecast" title="English MP3" mime-type="audio/mpeg" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.mp3" />
-			<pse:stream type="icecast" title="English OGG" mime-type="audio/ogg" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.ogg" />
-			<pse:stream type="icecast" title="English OPUS" mime-type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.opus" />
-			<pse:stream type="icecast" title="English ADTS" mime-type="audio/aac-adts" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.aac" />
-			<pse:stream type="icecast" title="English AACP" mime-type="audio/aac-aacp" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.heaac" />
+			<pse:stream type="http" title="English MP3" mime-type="audio/mpeg" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.mp3" />
+			<pse:stream type="http" title="English OGG" mime-type="audio/ogg" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.ogg" />
+			<pse:stream type="http" title="English OPUS" mime-type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.opus" />
+			<pse:stream type="http" title="English ADTS" mime-type="audio/aac-adts" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.aac" />
+			<pse:stream type="http" title="English AACP" mime-type="audio/aac-aacp" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.heaac" />
 		</pse:streams>
 		<pse:streams media="video" title="Standard Audio with Live Translation" lang="de">
-			<pse:stream type="icecast" title="Deutsch MPEG" mime-type="vnd.apple.mpegURL" bitrate="128000" url="http://freakshow.fm/stream/hls" />
+			<pse:stream type="http" title="Deutsch MPEG" mime-type="vnd.apple.mpegURL" bitrate="128000" url="http://freakshow.fm/stream/hls" />
 		</pse:streams>
 	</item>
 </channel>
