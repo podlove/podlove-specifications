@@ -10,7 +10,7 @@ Podlove Streaming Extension is an XML 1.0 based format meant to extend file form
 
 ## Change Log ##
 
-    2016-XX-XX: 1.0 - Initial Release
+    2016-XX-XX: 1.0 - TODO
 
 ## Motivation and Scope ##
 
