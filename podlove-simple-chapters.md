@@ -50,7 +50,7 @@ There **must** be only one `<psc:chapters>` element. Clients **should** ignore e
 The `<psc:chapters>` element accepts one attribute:
 
 >**version="number"**
-:    Specifies the version of this specification (current version is 1.1). This enables future enhancements of this standard. This attribute is optional and defaults to "1.0".
+:    Specifies the version of this specification (current version is 1.2). This enables future enhancements of this standard. This attribute is optional and defaults to "1.0".
 
 ### <psc:chapter> ###
 
